@@ -1,0 +1,156 @@
+/* globals.css */
+
+/* General body styling for both light and dark modes */
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Default font */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+/* Light mode colors for the body */
+body.light {
+  --bg-color: #ffffff; /* White background for light mode */
+  --text-color: #111111; /* Dark text for light mode */
+  --bg-color-light: #f1f1f1; /* Lighter gray for light mode background elements */
+}
+
+/* Dark mode colors for the body */
+body.dark {
+  --bg-color: #121212; /* Dark background for dark mode */
+  --text-color: #ffffff; /* White text for dark mode */
+  --bg-color-light: #333333; /* Darker gray for light mode elements in dark theme */
+}
+
+/* Styled container that inherits background and text color based on the theme */
+.container {
+  padding: 2rem; /* Padding inside the container */
+  background-color: inherit; /* Inherit background color from body */
+  color: inherit; /* Inherit text color from body */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Space out navbar items */
+  padding: 1rem 2rem; /* Padding inside navbar */
+  background-color: var(--bg-color); /* Background color changes based on theme */
+  color: var(--text-color); /* Text color changes based on theme */
+  border-bottom: 1px solid #ccc; /* Light border at the bottom */
+}
+
+/* Navbar links */
+.navbar a {
+  color: var(--text-color); /* Text color based on theme */
+  text-decoration: none; /* Remove underline */
+  margin-right: 1rem; /* Space between navbar items */
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+  text-decoration: underline; /* Underline text when hovered */
+}
+
+/* Button in the navbar */
+.navbar button {
+  background: none; /* No background */
+  border: 1px solid currentColor; /* Border color matches text color */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: inherit; /* Text color based on theme */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover effect for navbar button */
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color on hover */
+}
+
+/* Styling for general links */
+a {
+  color: inherit; /* Inherit text color */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Styling for headers and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+  color: inherit; /* Inherit text color */
+}
+
+/* Page styling that adapts to background and text color */
+.page {
+  background-color: inherit; /* Inherit background color from body */
+  color: inherit; /* Inherit text color from body */
+  min-height: 100vh; /* Ensure the page takes up full height */
+  padding: 2rem; /* Padding inside the page */
+}
+
+/* Theme toggle section for light/dark mode switch */
+.theme-toggle {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Align items vertically */
+  gap: 0.5rem; /* Space between toggle and icon */
+}
+
+/* Styling for the switch itself */
+.switch {
+  position: relative; /* Positioning context for the slider */
+  display: inline-block; /* Inline block layout */
+  width: 46px; /* Width of the switch */
+  height: 24px; /* Height of the switch */
+}
+
+/* Hide the default checkbox input */
+.switch input {
+  opacity: 0; /* Make the input invisible */
+  width: 0; /* Remove width */
+  height: 0; /* Remove height */
+}
+
+/* Slider element for the switch */
+.slider {
+  position: absolute; /* Positioning context for the slider */
+  cursor: pointer; /* Pointer cursor on hover */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  right: 0; /* Align to right */
+  bottom: 0; /* Align to bottom */
+  background-color: #ccc; /* Default background color of the slider */
+  transition: 0.4s; /* Smooth transition when toggling */
+  border-radius: 24px; /* Rounded corners for the slider */
+}
+
+/* Styling for the circular element inside the slider */
+.slider:before {
+  position: absolute; /* Absolute positioning inside the slider */
+  content: ""; /* No content but a visual element */
+  height: 18px; /* Height of the circle */
+  width: 18px; /* Width of the circle */
+  left: 3px; /* Position it to the left */
+  bottom: 3px; /* Position it at the bottom */
+  background-color: white; /* White color for the circle */
+  transition: 0.4s; /* Smooth transition when toggling */
+  border-radius: 50%; /* Make the circle round */
+}
+
+/* Toggle ON state */
+input:checked + .slider {
+  background-color: #4caf50; /* Green background when toggled ON */
+}
+
+/* Move the circle to the right when toggle is ON */
+input:checked + .slider:before {
+  transform: translateX(22px); /* Move the circle to the right */
+}
+
+/* Theme icon next to the switch */
+.theme-icon {
+  font-size: 1.2rem; /* Icon size */
+}
+
+/* Navbar links container (flexbox layout) */
+.navbar-links {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Align items vertically */
+  gap: 1.5rem; /* Space between links and theme toggle */
+}

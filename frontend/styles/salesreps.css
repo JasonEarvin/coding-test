@@ -1,0 +1,56 @@
+/* styles/salesreps.css */
+
+/* Main section for displaying sales representatives */
+.sales-reps-section {
+  padding: 20px; /* Padding around the section */
+  background-color: var(--bg-color); /* Background adapts based on light/dark mode */
+  color: var(--text-color); /* Text color adapts based on light/dark mode */
+}
+
+/* Card layout for each sales representative */
+.sales-rep-card {
+  background-color: var(--bg-color-light); /* Gray background for data container, lighter for dark mode */
+  margin-bottom: 20px; /* Space between cards */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Sales representative name (h2) text style */
+.sales-rep-card h2 {
+  color: var(--text-color); /* Text color adapts to the theme */
+}
+
+/* Sales rep's role and region (h3) text style */
+.sales-rep-card h3 {
+  color: var(--text-color-light); /* Lighter text for secondary info */
+}
+
+/* Deal title (h4) styling, bolded */
+.sales-rep-card h4 {
+  font-weight: bold; /* Bold text for emphasis */
+  color: var(--text-color); /* Primary text color */
+}
+
+/* List styling for deals in the card */
+.sales-rep-card ul {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove left padding */
+}
+
+/* Styling for individual list items (deals) */
+.sales-rep-card li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Deal title (h5) styling */
+.sales-rep-card li h5 {
+  font-size: 1.1rem; /* Slightly larger text for deal titles */
+  color: var(--text-color); /* Text color adapts based on theme */
+}
+
+/* Deal status and client info (p) styling */
+.sales-rep-card li p {
+  font-size: 0.9rem; /* Smaller text for descriptions */
+  color: var(--text-color-light); /* Lighter color for less important text */
+}

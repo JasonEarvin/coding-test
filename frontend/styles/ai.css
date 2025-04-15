@@ -1,0 +1,110 @@
+/* styles/ai.css */
+
+/* Container for the AI component with a white background and box shadow */
+.ai-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff; /* White card background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow around the card */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font for the content */
+}
+
+/* Example questions section with a light background and borders */
+.example-questions {
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Light background */
+  color: black; /* Text color */
+  padding: 15px; /* Padding inside the box */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+.example-questions h3 {
+  margin: 0;
+  font-size: 1.2rem; /* Slightly larger font for heading */
+}
+
+.example-questions ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove indentation */
+}
+
+.example-questions ul li {
+  margin: 8px 0; /* Space between items */
+  font-size: 1rem; /* Standard font size for list items */
+}
+
+/* Main page styling for AI section with background color and text color based on the theme */
+.ai-page {
+  background-color: var(--bg-color); /* Background color changes based on theme */
+  color: var(--text-color); /* Text color changes based on theme */
+  min-height: 100vh; /* Ensure the page takes up the full viewport height */
+  padding: 2rem; /* Add padding to the content */
+}
+
+/* AI title with larger, bold font for prominence */
+.ai-title {
+  font-size: 2rem;
+  font-weight: 600; /* Bold text */
+  margin-bottom: 1.5rem; /* Space below the title */
+  text-align: center; /* Centered title */
+  color: black; /* Text color */
+}
+
+/* Form styling for the AI input section */
+.ai-form {
+  display: flex;
+  flex-direction: column; /* Stack input and button vertically */
+  gap: 1rem; /* Add space between form elements */
+}
+
+/* Styling for the AI input field */
+.ai-input {
+  padding: 0.75rem 1rem; /* Add padding inside the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem; /* Standard font size */
+  outline: none; /* Remove outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus state for the input field to highlight it */
+.ai-input:focus {
+  border-color: #007bff; /* Blue border when focused */
+}
+
+/* Styling for the submit button */
+.ai-button {
+  padding: 0.75rem 1rem; /* Add padding inside the button */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text color */
+  font-weight: 500; /* Medium weight font */
+  border: none; /* Remove default button border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the button */
+.ai-button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Error message styling */
+.ai-error {
+  color: red; /* Red text for error messages */
+  margin-top: 1rem; /* Space above the error message */
+  text-align: center; /* Center the error message */
+}
+
+/* Styling for the AI response section */
+.ai-response {
+  margin-top: 2rem; /* Space above the response */
+  padding: 1rem; /* Padding inside the response box */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f8f9fa; /* Light gray background for the response */
+  font-size: 1rem; /* Standard font size */
+  color: black; /* Black text color */
+}

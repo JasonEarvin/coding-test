@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color); /* Background color changes dynamically based on the theme */
+  color: var(--text-color); /* Text color changes dynamically based on the theme */
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar logo text color changes with the theme */
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-color); 
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color); /* Link text color changes based on the theme */
+  transition: color 0.3s ease;
+}
+
+/* Change link text color on hover */
+.navbar-links a:hover {
+  color: #ffc107; /* Hover color */
+}
+
+.navbar button {
+  background: none;
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 4px;
+}
+
+/* Button hover effect */
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background change on hover */
+}

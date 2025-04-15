@@ -1,0 +1,26 @@
+/* styles/home-container.css */
+
+/* Main container for homepage layout */
+.home-container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 2rem; /* Padding around the content */
+    background: var(--bg-color); /* Background color adapts based on theme */
+    font-family: 'Segoe UI', sans-serif; /* Font for the page */
+}
+
+/* Heading on the homepage */
+.home-container h1 {
+    font-size: 2.5rem; /* Larger font for the main heading */
+    color: var(--text-color); /* Dynamic text color based on theme */
+}
+
+/* Paragraph under the heading on the homepage */
+.home-container p {
+    font-size: 1.2rem; /* Medium-sized text for the description */
+    color: var(--text-color); /* Dynamic text color based on theme */
+    margin-top: 1rem; /* Space between the heading and the paragraph */
+}
